@@ -13,12 +13,11 @@ const newUserConnected = function (data) {
     //give the user a random unique id
     id = Math.floor(Math.random() * 1000000);
     userName = 'user-' +id;
-    //console.log(typeof(userName));   
+    console.log(typeof(userName));   
     
 
     //emit an event with the user id
     socket.emit("new user", userName);
-    //call
     addToUsersBox(userName);
 };
 
@@ -50,11 +49,13 @@ socket.on("new user", function (data) {
   data.map(function (user) {
           return addToUsersBox(user);
       });
+  console.log("New user joined chat", data.message)
 });
 
 //when a user leaves
 socket.on("user disconnected", function (userName) {
   document.querySelector(`.${userName}-userlist`).remove();
+  console.log(userName, "disconnected")
 });
 
 
@@ -65,6 +66,7 @@ const messageBox = document.querySelector(".messages__history");
 const addNewMessage = ({ user, message }) => {
   const time = new Date();
   const formattedTime = time.toLocaleString("en-US", { hour: "numeric", minute: "numeric" });
+
 
   const receivedMsg = `
   <div class="incoming__message">
