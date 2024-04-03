@@ -1,4 +1,4 @@
-.title{
+.title {
   color: #2f6690;
   padding: 5px 7px;
 }
@@ -28,43 +28,45 @@ li a:hover {
 }
 
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: sans-serif;
-  }
-  
-  /* Style the side navigation */
-  .sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #2f6690;
-    overflow-x: hidden;
-  }
+  box-sizing: border-box;
+}
 
-  .inbox__people{
-      color: white;
-      padding: 16px;
-  }
-  .content {
-    margin-left: 200px;
-    padding-left: 20px;
-  }
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
 
-  button{
-    background-color: #2f6690;
-    color: white;
-  }
-  p , .time_date{
-    color: #2f6690
-  }
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2f6690;
+  overflow-x: hidden;
+}
 
-  .time_date{
-    font-style: italic;
-  }
+.inbox__people {
+  color: white;
+  padding: 16px;
+}
+
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+}
+
+button {
+  background-color: #2f6690;
+  color: white;
+}
+
+p,
+.time_date {
+  color: #2f6690
+}
+
+.time_date {
+  font-style: italic;
+}

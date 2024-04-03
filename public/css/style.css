@@ -42,61 +42,63 @@ section {
 }
 
 .home-img {
-  display:inline;
-  float:left;
-  width:25%;
+  display: inline;
+  float: left;
+  width: 25%;
   padding: 2%;
 }
 
 #divider {
   background-color: #2f6690;
   padding: 1px;
-  width : 75%;
+  width: 75%;
   margin: auto;
 }
 
-aside h3, aside p {
+aside h3,
+aside p {
   display: block;
-  color:white;
+  color: white;
   text-decoration: none;
-  text-align:center;
-  }
+  text-align: center;
+}
 
-footer{
+footer {
   background-color: #2f6690;
-  padding:15px;
-  z-index:1;
+  padding: 15px;
+  z-index: 1;
   bottom: 0;
 }
 
-h4 a{
+h4 a {
   display: inline-block;
   text-decoration: none;
   color: white;
   background-color: #2f6690;
-  margin:auto;
-  width:45%;
+  margin: auto;
+  width: 45%;
 }
-  aside {
-    height: 100%;
-    width: 30%;
-    position: fixed;
-    z-index: 2;
-    top: auto;
-    right: 0;
-    background-color: #3a7ca5;
-    overflow-x: hidden;
-  }
 
-  aside img{
-    padding: 5%;
-  }
+aside {
+  display: inline-block;
+  height: 100%;
+  width: 30%;
+  top: auto;
+  right: 0;
+  position: absolute;
+  background-color: #3a7ca5;
+}
 
-  .about {
-    text-align: left;
-      color: #2f6690;
+aside img {
+  padding: 5%;
+}
+
+.about {
+  text-align: left;
+  color: #2f6690;
   text-decoration: underline;
-  }
-  .aboutMe {
-    max-width: 65%;
-  }
+}
+
+.aboutMe {
+  max-width: 65%;
+}
